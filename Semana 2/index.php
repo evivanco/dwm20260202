@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Pagina Principal</title>
+        <title>APL CONSTRUCCIONES</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -39,17 +39,13 @@
             </div>
         </nav>
         <!--Container-->
-        <div class="container-fluid bg-warning">
-            <a href="empresa.php">Ir a Empresa</a><br>
-            <a href="servicios.php">Ir a Servicios</a><br>
-            <a href="productos.php">Ir a Producto</a><br>
-            <a href="Contacto.php">Ir a Contacto</a><br>
+        <div class="container-fluid" style="background-image: url('img/chiefkeef.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 60vh;">
         </div>
         <!--Footer-->
         <div class="container-fluid bg-dark">
             <div class="row">
                 <div class="col-4"></div>
-                <div class="col-4" style="color:white"><strong>MiEmpresa@2026</strong></div>
+                <div class="col-4" style="color:white"><strong>TRAPPWORLD</strong></div>
                 <div class="col-4"></div>
             </div>
         </div>
