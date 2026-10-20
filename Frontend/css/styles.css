@@ -1,60 +1,80 @@
-/* Variables y estilos generales */
+/* ============ TOKENS DE EL TRIGAL & VARIABLES ============ */
 :root {
-  --primary-color: #d97706; /* Tono panadería (naranja/dorado) */
-  --hover-color: #b45309;
+  --primary-color: #E2791C; /* Tono panadería (naranja/dorado) */
+  --hover-color: #B85E12;
+  
+  --font-display: 'Bitter', Georgia, serif;
+  --font-body: 'Karla', 'Segoe UI', Roboto, sans-serif;
+
+  --bg: #F6EFE1;
+  --bg-alt: #EDE3CF;
+  --surface: #FFFFFF;
+  --text: #241A10;
+  --text-dim: #6B5D4E;
+  --border: #E1D4B8;
+  --header-bg: #1C140D;
+  --header-text: #F6EFE1;
 }
 
+/* ============ ESTILOS GENERALES ============ */
 body {
-  background-color: #fcfaf8;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  margin: 0;
 }
 
-/* Navbar y Carrito */
+/* ============ NAVBAR Y CARRITO ============ */
 .navbar-brand {
+  font-family: var(--font-display);
   font-weight: 700;
   color: var(--primary-color) !important;
 }
+
 #cart-icon {
   font-size: 1.5rem;
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
   text-decoration: none;
 }
+
 #cart-icon:hover {
   transform: scale(1.1);
 }
 
-/* Tarjetas de producto */
+/* ============ TARJETAS DE PRODUCTO ============ */
 .card-product {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: none;
+  background-color: var(--surface);
+  border-radius: 12px;
+  overflow: hidden;
   box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
+
 .card-product:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 15px rgba(0,0,0,0.1);
 }
-.card-img-top {
-  height: 200px;
-  object-fit: cover;
-}
 
-/* Carrusel */
-.carousel-item img {
-  height: 400px;
-  object-fit: cover;
-  filter: brightness(0.7);
-}
-.carousel-caption {
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
-  padding: 20px;
-}
-
-/* Forzar que la imagen del producto encaje perfectamente */
+.card-img-top,
 .card-product .product-img {
   width: 100% !important;
   height: 220px !important;
   object-fit: cover !important;
   display: block;
+}
+
+/* ============ CARRUSEL ============ */
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 20px;
 }
